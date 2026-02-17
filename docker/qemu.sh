@@ -7,6 +7,7 @@ set -euo pipefail
 . lib.sh
 
 main() {
+    local arch="${1}"
     install_packages qemu-system-${arch}
 }
 
