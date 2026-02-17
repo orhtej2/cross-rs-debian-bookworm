@@ -187,7 +187,7 @@ main() {
     fi
 
     # Download packages
-    mv /etc/apt/sources.list /etc/apt/sources.list.bak
+    #mv /etc/apt/sources.list /etc/apt/sources.list.bak
     mv /etc/apt/sources.list.d /etc/apt/sources.list.d.bak
     echo -e "${debsource}" >/etc/apt/sources.list
 
@@ -410,7 +410,7 @@ EOF
 
     # Clean up
     rm -rf "/qemu/${root}" "/qemu/${arch}"
-    mv -f /etc/apt/sources.list.bak /etc/apt/sources.list
+    #mv -f /etc/apt/sources.list.bak /etc/apt/sources.list
     mv -f /etc/apt/sources.list.d.bak /etc/apt/sources.list.d
     if [ -f /etc/dpkg/dpkg.cfg.d/multiarch.bak ]; then
         mv /etc/dpkg/dpkg.cfg.d/multiarch.bak /etc/dpkg/dpkg.cfg.d/multiarch
