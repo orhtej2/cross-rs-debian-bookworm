@@ -20,7 +20,7 @@ RUN TARGET_ARCH=amd64 /deny-debian-packages.sh \
     binutils-x86-64-linux-gnu
 
 COPY qemu.sh /
-RUN /qemu.sh x86_64
+RUN /qemu.sh x86
 
 COPY dropbear.sh /
 RUN /dropbear.sh
